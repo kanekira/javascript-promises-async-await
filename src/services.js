@@ -13,7 +13,7 @@ export function fetchBooks() {
   .then(books => books)
   .catch(error => console.log(error));
 }
-export async function asyncFetchBooks() {
+export async function asyncFetchMovies() {
   try {
     const response = await fetch("./data/movies.json")
     const results = await response.json();
@@ -22,7 +22,7 @@ export async function asyncFetchBooks() {
     console.log(error);
   }
 }
-export async function asyncFetchMovies() {
+export async function asyncFetchBooks() {
   try {
     const response = await fetch("./data/books.json");
     const results = await response.json();
